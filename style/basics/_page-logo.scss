@@ -1,0 +1,25 @@
+.page-logo{
+    margin-top:40px;
+
+    &--top,
+    &--bottom{
+        display:block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    &--top{
+        background-image: url('../assets/logo/logo-text.png'); ;
+        min-height:100px;
+    }
+    &--bottom{
+        background-image: url('../assets/logo/logo-subtext.png');
+        margin-top:15px;
+        min-height:10px;
+    }
+}
+@media screen and (min-height:900px){
+    .page-logo{
+        margin-top:80px;
+    }
+}

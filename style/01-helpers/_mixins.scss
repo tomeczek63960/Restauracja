@@ -1,0 +1,51 @@
+@mixin flex( $justify:auto, $align:auto,$gap:auto, $wrap:auto, $direction:auto,  $display:flex ){
+    display:$display;
+
+    @if($justify != auto){
+        justify-content: $justify;
+    }
+    @if($align != auto){
+        align-items: $align;
+    }
+    @if($direction != auto){
+        flex-direction:$direction;
+    }
+    @if($wrap != auto){
+        flex-wrap: $wrap;
+    }
+    @if($gap != auto){
+        gap: $gap;
+    }
+}
+
+@mixin maxWidth($maxWidth, $marginLeft:auto, $marginRight:auto) {
+    max-width: $maxWidth;
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+}
+
+@mixin absolute($top:auto,$right:auto,$bottom:auto,$left:auto,$transform:auto,$index:auto,$position:absolute) {
+    position: $position;
+    
+    @if($top != auto){
+        top: $top;
+    }
+    @if($left != auto){
+        left: $left;
+    }
+    @if($right != auto){
+        right: $right;
+    }
+    @if($bottom != auto){
+        bottom: $bottom;
+    }
+    @if($top != auto){
+        top: $top;
+    }
+    @if($index != auto){
+        z-index: $index;
+    }
+    @if(transform != auto){
+        transform:$transform;
+    }
+}

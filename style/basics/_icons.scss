@@ -1,0 +1,23 @@
+.icon{
+    width:40px;
+    height:40px;
+    display: block;
+    border-radius:50%;
+    background-size:55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent:-9999px;
+    background-color:$primaryColor;
+}
+.icon--facebook{
+    background-image: url('../assets/icons/icon-fb.svg');
+}
+.icon--instagram{
+    background-image: url('../assets/icons/icon-instagram.svg');
+}
+.icon--twitter{
+    background-image: url('../assets/icons/icon-twitter.svg');
+}
+.icon--whatsapp{
+    background-image: url('../assets/icons/icon-whatsapp.svg');
+}
