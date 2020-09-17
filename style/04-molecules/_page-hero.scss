@@ -1,0 +1,76 @@
+.page-hero{
+    min-height:100vh;
+    background-image:
+        linear-gradient(to right, #000 5%, transparent 30%, #000 95%),
+        url('../assets/hero-bg.jpg');
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-position: bottom 30% center;
+
+    &__content{
+        padding-top:50px;
+        padding-bottom:50px;
+        background-color:$primaryBg;
+        height:50vh;
+        background-image: 
+            url('../assets/top-left.png'),
+            url('../assets/top-right.png');
+        background-size: 120px;
+        background-position: top left, top right;
+        background-repeat: no-repeat;
+
+        @media screen and (min-height:600px){
+            height:44vh;
+        }
+        @media screen and (min-width:700px){
+            height:40vh;
+        }
+    }
+
+    &__space-border{
+        @include maxWidth(1000px);
+        height:35vh;
+        position: relative;
+        @media screen and (min-height:600px){
+            height:40vh;
+        }
+
+        &::before,
+        &::after{
+            content:"";
+            width:100%;
+            height:2px;
+            display:block;
+            position: absolute;
+            background:$primaryColor;
+            transition: 0.7s;
+        }
+        &::before{
+            top:0;
+            left:0;
+        }
+        &::after{
+            bottom:0;
+            right:0;
+        }
+    }
+
+    &__content-2{
+        padding:30px 20px;
+        height:20vh;
+        background:$primaryBg;
+        color:$white;
+        text-align:center;
+        font-size:13px;
+
+        p{
+            @include maxWidth(500px);
+        }
+    }
+}
+
+@media screen and (min-width:1400px){
+    .page-hero__content{
+        background-position: top left 100px, top right 100px;
+    }
+}

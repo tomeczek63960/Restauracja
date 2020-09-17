@@ -1,0 +1,43 @@
+.discount{
+    @include flex(center,center, auto, auto, column);
+    padding: 0 20px;
+    min-height:90vh;
+    color:$white;
+    text-align: center;
+
+    background-image: 
+        linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%),
+        url('../assets/discount.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+    &__heading{
+        font-size: 40px;
+        color:$primaryColor;
+        line-height: 1.5;
+    }
+    &__text{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width:700px){
+    .discount{
+        background-image: 
+            linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%),
+            linear-gradient(to right, #000, #000 15%, transparent 40%, #000 85%),
+            url('../assets/discount.jpg');
+        
+        &__heading{
+            font-size: 55px;
+        }
+        &__text{
+            margin-top: 80px;
+            font-size: 19px;
+        }
+    }
+}

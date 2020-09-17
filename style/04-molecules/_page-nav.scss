@@ -1,0 +1,58 @@
+.page-nav{
+    &__navbar{
+        @include flex(space-between, center,10px);
+        @include maxWidth(1000px);
+        padding:5px 20px;
+        position: relative;
+
+        &::before,
+        &::after{
+            content:"";
+            display: block;
+            width: 100%;
+            position: absolute;
+            height:2px;
+            background-color: $primaryColor;
+        }
+
+        &::before{
+            top:0;
+            left:0;
+        }
+        &::after{
+            bottom:0;
+            right:0;
+        }
+
+        &__link{
+            color:$primaryColor;
+            font-size:18px;
+            text-transform:capitalize;
+            line-height:2;
+        }
+    }
+}
+
+@media screen and (min-width:500px){
+    .page-nav{
+        &__navbar{
+            justify-content: center;
+            gap:50px;
+
+            &__link{
+                font-size:20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:700px){
+    .page-nav{
+        padding:0 50px;
+    }
+}
+@media screen and (min-width:900px){
+    .page-nav{
+        padding:0 100px;
+    }
+}

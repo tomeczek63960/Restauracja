@@ -1,0 +1,57 @@
+.menu{
+    padding: 50px 20px;
+    color:$white;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: normal;
+
+    background-image:
+        linear-gradient(to right, #000, #000 20%, transparent 40%, #000 86%),
+        linear-gradient(to bottom, #000, #000 20%, transparent 70%, #000 106%),
+        url('../assets/menu.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__heading{
+        font-size: 50px;
+        font-family: Poppins;
+    }
+
+    &__subheading{
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    &__list-heading{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color:$primaryColor;
+        font-size: 30px;
+        font-family: Poppins;
+        font-weight: normal;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    &__list{
+        line-height: 1.5;
+        font-size: 14px;
+
+        li{
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (min-width:700px){
+    .menu{
+        &__list{
+            font-size: 15px;
+        }
+        &__list-heading{
+            font-size: 35px;
+            margin-top: 70px;
+        }
+    }
+}

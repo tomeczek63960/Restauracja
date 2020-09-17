@@ -1,0 +1,56 @@
+.delivery{
+    
+    background-image: url('../assets/delivery.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    &__content{
+        @include flex(space-between,center,auto,auto, column);
+        padding:60px 20px;
+        width: 100%;
+        min-height: 90vh;
+        color: $white;
+        background-color: rgba(0,0,0,.7);
+
+        text-align: center;
+    }
+    &__heading-group{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &__heading{
+        font-weight: normal;
+    }
+    &__heading-2{
+        margin-top: 30px;
+        color:$primaryColor;
+    }
+    &__text-top,
+    &__text-bottom{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    &__text-top{
+        @include maxWidth(500px);
+    }
+    &__text-bottom{
+        @include maxWidth(900px);
+    }
+}
+
+
+@media screen and (min-width:700px){
+    .delivery{
+        background-size: contain;
+
+        &__heading{
+            font-size: 45px;
+        }
+        &__heading-2{
+            font-size: 55px;
+            letter-spacing: 1px;
+        }
+        
+    }
+}

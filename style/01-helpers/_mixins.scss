@@ -49,3 +49,28 @@
         transform:$transform;
     }
 }
+
+@mixin spaceBorder($height, $top) {
+    @include maxWidth(1000px);
+    @include absolute($top, auto, auto, 50%, translateX(-50%));
+    width:100%;
+    height:$height;
+
+    &::before,
+    &::after{
+        content:"";
+        width:100%;
+        height:2px;
+        display: block;
+        position: absolute;
+        background-color: $primaryColor;
+    }
+    &::before{
+        top:0;
+        left:0;
+    }
+    &::after{
+        bottom:0;
+        right:0;
+    }
+}

@@ -1,0 +1,69 @@
+.burgers{
+    min-height: 100vh;
+    position: relative;
+
+    background-image: 
+        url('../assets/burgers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color:$white;
+    text-align: center;
+
+    &::before,
+    &::after{
+        content:"";
+        width:100%;
+        position: absolute;
+        display:block;
+        background-color: rgba(0,0,0,.6);
+    }
+
+    &::before{
+        top:0;
+        height:25vh;
+    }
+    &::after{
+        bottom:0;
+        height:30vh;
+    }
+
+    &__space{
+        @include spaceBorder(45vh, 25vh);
+    }
+
+    &__text{
+        @include absolute(5vh, auto, auto, 50%, translateX(-50%));
+        width: 100%;
+    }
+    &__heading,
+    &__subheading{
+        font-weight: normal;
+        color:$primaryColor;
+        width: 100%;
+    }
+    &__heading{
+        @include absolute(10vh, auto, auto, 50%, translateX(-50%));
+        font-size: 45px;
+    }
+    &__subheading{
+        @include absolute(auto, auto, 5vh, 50%, translateX(-50%));
+        z-index: 1;
+        font-size: 40px;
+        line-height: 1.5;
+
+        strong{
+            font-size: 50px;
+        }
+    }
+}
+
+@media screen and (min-width:700px){
+    .burgers{
+        background-image: 
+            linear-gradient(to right, #000, #000 6%, transparent 60%, #000, #000 95%),
+            url('../assets/burgers.jpg');
+        background-size: contain;
+    }
+
+}
