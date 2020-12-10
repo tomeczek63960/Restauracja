@@ -4,9 +4,9 @@
     color:$white;
     font-family: Poppins;
     text-align: center;
-    background-image:
-        linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%),
-        url('../assets/special.jpg');
+    // background-image:
+    //     linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%),
+    //     url('../assets/special.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -45,10 +45,10 @@
 
 @media screen and (min-width:900px){
     .special{
-        background-image: 
-            linear-gradient(to right, #000 20%, transparent 30%, #000 105%),
-            linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%),
-            url('../assets/special.jpg');;
+        // background-image: 
+        //     linear-gradient(to right, #000 20%, transparent 30%, #000 105%),
+        //     linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%),
+        //     url('../assets/special.jpg');;
         background-size: contain;
 
         &__heading{

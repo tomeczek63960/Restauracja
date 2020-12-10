@@ -9,7 +9,13 @@
 </head>
 <body>
 
-    <header class="page-hero" id='home'>
+    <header 
+        class="page-hero lazyLoad"
+        id='home'
+        data-lgDesktop-bg="linear-gradient(to right, #000 5%, transparent 30%, #000 95%), url('./assets/hero-bg.jpg')"
+        data-desktop-bg="linear-gradient(to right, #000 5%, transparent 30%, #000 95%), url('./assets/hero-bg.jpg')"
+        data-mobile-bg="linear-gradient(to right, #000 5%, transparent 30%, #000 95%), url('./assets/hero-bg.jpg')"
+    >
         <div class="page-hero__content">
             <div class="page-bar">
 
@@ -42,7 +48,11 @@
 
     <main class="page-content">
 
-        <section class="special">
+        <section class="special lazyLoad"
+            data-lgDesktop-bg="linear-gradient(to right, #000 20%, transparent 30%, #000 105%), linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%), url('./assets/special.jpg')"
+            data-desktop-bg="linear-gradient(to right, #000 20%, transparent 30%, #000 105%), linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%), url('./assets/special.jpg')"
+            data-mobile-bg="linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%), url('./assets/special.jpg')"
+        >
 
             <h3 class="special__heading">Special <strong>Chef</strong></h3>
 
@@ -54,7 +64,13 @@
 
         </section>
 
-        <section class="special-2" >
+        <section 
+            class="special-2 lazyLoad"
+            data-lgDesktop-bg="linear-gradient(to right, #000 15%, transparent 30%, #000 80%), url('./assets/special-2.jpg')"
+            data-desktop-bg="linear-gradient(to right, #000 5%, transparent 30%, #000 95%), url('./assets/special-2.jpg')"
+            data-mobile-bg="linear-gradient(to right, #000 5%, transparent 30%, #000 95%), url('./assets/special-2.jpg')"
+        
+        >
 
             <div class="special-2__content-1">
 
@@ -68,7 +84,11 @@
 
         </section>
 
-        <section class="menu" id='menu'>
+        <section class="menu lazyLoad" id='menu'
+            data-lgDesktop-bg =" linear-gradient(to right, #000, #000 20%, transparent 40%, #000 86%), linear-gradient(to bottom, #000, #000 20%, transparent 70%, #000 106%), url('./assets/menu.jpg')"
+            data-desktop-bg =" linear-gradient(to right, #000, #000 20%, transparent 40%, #000 86%), linear-gradient(to bottom, #000, #000 20%, transparent 70%, #000 106%), url('./assets/menu.jpg')"
+            data-mobile-bg =" linear-gradient(to right, #000, #000 20%, transparent 40%, #000 86%), linear-gradient(to bottom, #000, #000 20%, transparent 70%, #000 106%), url('./assets/menu.jpg')"
+        >
             <h3 class="menu__heading">Menu</h3>
             <p class="menu__subheading">This photoshop's version of</p>
 
@@ -92,25 +112,37 @@
             </ul>
         </section>
 
-        <section class="discount">
-
+        <section
+            class="discount lazyLoad"
+            data-mobile-bg = "linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%), url('./assets/discount.jpg')"
+            data-desktop-bg = "linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%), linear-gradient(to right, #000, #000 15%, transparent 40%, #000 85%),url('./assets/discount.jpg')"
+            data-lgDesktop-bg = "linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%), linear-gradient(to right, #000, #000 15%, transparent 40%, #000 85%),url('./assets/discount.jpg')"
+            >
+            
             <h5 class="discount__heading">2 x 1 <br> Discount</h5>
             <p class="discount__text">This is photoshop version of Lorem ipsum</p>
-
+            
         </section>
-
-        <section class="burgers" id='services'>
-
+        
+        <section class="burgers lazyLoad" id='services'
+            data-mobile-bg = "url('./assets/burgers.jpg')"
+            data-desktop-bg = "linear-gradient(to right, #000, #000 6%, transparent 60%, #000, #000 95%), url('./assets/burgers.jpg')"
+            data-lgDesktop-bg = "linear-gradient(to right, #000, #000 6%, transparent 60%, #000, #000 95%), url('./assets/burgers.jpg')"
+        >
             <p class="burgers__text">This is photoshop's version Lorem</p>
-
+            
             <h6 class="burgers__heading">Special Offer</h6>
-
+            
             <div class="burgers__space"></div>
 
             <h6 class="burgers__subheading">Burgers <br> <strong>25% Off</strong></h6>
         </section>
         
-        <section class="delivery" >
+        <section class="delivery lazyLoad"
+            data-mobile-bg = "url('./assets/delivery.png')"
+            data-desktop-bg = "url('./assets/delivery.png')"
+            data-lgDesktop-bg = "url('./assets/delivery.png')"
+        >
             <div class="delivery__content">
                 <p class="delivery__text-top">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -127,7 +159,11 @@
             </div>
         </section>
 
-        <section class="discount-2">
+        <section class="discount-2 lazyLoad"
+            data-mobile-bg = "url('./assets/discount-2.jpg')"
+            data-desktop-bg = "linear-gradient(to right, #000, #000 13%, transparent 50%, #000 90%), url('./assets/discount-2.jpg')"
+            data-lgDesktop-bg = "linear-gradient(to right, #000, #000 23%, transparent 50%, #000 70%), url('./assets/discount-2.jpg')"
+        >
             <h5 class="discount-2__heading"><strong>20%</strong> <br> discount</h5>
 
             <div class="discount-2__space"></div>
@@ -164,6 +200,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
     <script src="./js/hero-animation.js"></script>
     <script src="./js/scroll-animation.js"></script>
-
+    <script src="./js/lazyLoad.js"></script>
 </body>
 </html>

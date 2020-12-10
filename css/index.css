@@ -437,8 +437,6 @@ textarea {
 
 .page-hero {
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(5%, #000), color-stop(30%, transparent), color-stop(95%, #000)), url("../assets/hero-bg.jpg");
-  background-image: linear-gradient(to right, #000 5%, transparent 30%, #000 95%), url("../assets/hero-bg.jpg");
   background-size: auto, cover;
   background-repeat: no-repeat;
   background-position: bottom 30% center;
@@ -597,8 +595,6 @@ textarea {
   color: white;
   font-family: Poppins;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #000), color-stop(30%, transparent), color-stop(110%, #000)), url("../assets/special.jpg");
-  background-image: linear-gradient(to bottom, #000 15%, transparent 30%, #000 110%), url("../assets/special.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -639,8 +635,6 @@ textarea {
 
 @media screen and (min-width: 900px) {
   .special {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #000), color-stop(30%, transparent), color-stop(105%, #000)), -webkit-gradient(linear, left top, left bottom, color-stop(15%, #000), color-stop(30%, transparent), color-stop(110%, #000)), url("../assets/special.jpg");
-    background-image: linear-gradient(to right, #000 20%, transparent 30%, #000 105%), linear-gradient(to bottom, #000 15%, transparent 30%, #000 110%), url("../assets/special.jpg");
     background-size: contain;
   }
   .special__heading {
@@ -655,8 +649,6 @@ textarea {
 }
 
 .special-2 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(5%, #000), color-stop(30%, transparent), color-stop(95%, #000)), url("../assets/special-2.jpg");
-  background-image: linear-gradient(to right, #000 5%, transparent 30%, #000 95%), url("../assets/special-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -734,21 +726,12 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .special-2 {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, #000), color-stop(30%, transparent), color-stop(80%, #000)), url("../assets/special-2.jpg");
-    background-image: linear-gradient(to right, #000 15%, transparent 30%, #000 80%), url("../assets/special-2.jpg");
-  }
-}
-
 .menu {
   padding: 50px 20px;
   color: white;
   text-align: center;
   font-family: Montserrat;
   font-weight: normal;
-  background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(20%, #000), color-stop(40%, transparent), color-stop(86%, #000)), -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(20%, #000), color-stop(70%, transparent), color-stop(106%, #000)), url("../assets/menu.jpg");
-  background-image: linear-gradient(to right, #000, #000 20%, transparent 40%, #000 86%), linear-gradient(to bottom, #000, #000 20%, transparent 70%, #000 106%), url("../assets/menu.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -812,8 +795,6 @@ textarea {
   min-height: 90vh;
   color: white;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(5%, #000), color-stop(60%, transparent), color-stop(98%, #000)), url("../assets/discount.jpg");
-  background-image: linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%), url("../assets/discount.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -847,7 +828,6 @@ textarea {
 .burgers {
   min-height: 100vh;
   position: relative;
-  background-image: url("../assets/burgers.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -947,16 +927,13 @@ textarea {
   font-size: 50px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .burgers {
-    background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(6%, #000), color-stop(60%, transparent), color-stop(#000), color-stop(95%, #000)), url("../assets/burgers.jpg");
-    background-image: linear-gradient(to right, #000, #000 6%, transparent 60%, #000, #000 95%), url("../assets/burgers.jpg");
     background-size: contain;
   }
 }
 
 .delivery {
-  background-image: url("../assets/delivery.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
