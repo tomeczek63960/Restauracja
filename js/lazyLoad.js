@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   } else {
                       if(image.dataset.desktopBg) {
                           if(window.innerWidth > 1400){
-                              image.style.backgroundImage = image.dataset.lgDesktopBg;
+                              image.style.backgroundImage = image.dataset.lgBg;
                           } else if(window.innerWidth > 900) {
                               image.style.backgroundImage = image.dataset.desktopBg;
                           } else {
