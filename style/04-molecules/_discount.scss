@@ -27,10 +27,10 @@
 
 @media screen and (min-width:700px){
     .discount{
-        background-image: 
-            linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%),
-            linear-gradient(to right, #000, #000 15%, transparent 40%, #000 85%),
-            url('../assets/discount.jpg');
+        // background-image: 
+        //     linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%),
+        //     linear-gradient(to right, #000, #000 15%, transparent 40%, #000 85%),
+        //     url('../assets/discount.jpg');
         
         &__heading{
             font-size: 55px;

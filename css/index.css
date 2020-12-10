@@ -812,10 +812,6 @@ textarea {
 }
 
 @media screen and (min-width: 700px) {
-  .discount {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(5%, #000), color-stop(60%, transparent), color-stop(98%, #000)), -webkit-gradient(linear, left top, right top, from(#000), color-stop(15%, #000), color-stop(40%, transparent), color-stop(85%, #000)), url("../assets/discount.jpg");
-    background-image: linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%), linear-gradient(to right, #000, #000 15%, transparent 40%, #000 85%), url("../assets/discount.jpg");
-  }
   .discount__heading {
     font-size: 55px;
   }
@@ -1010,7 +1006,6 @@ textarea {
   position: relative;
   color: white;
   text-align: center;
-  background-image: url("../assets/discount-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1100,29 +1095,18 @@ textarea {
   z-index: 1;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .discount-2 {
     background-size: contain;
-    background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(13%, #000), color-stop(50%, transparent), color-stop(90%, #000)), url("../assets/discount-2.jpg");
-    background-image: linear-gradient(to right, #000, #000 13%, transparent 50%, #000 90%), url("../assets/discount-2.jpg");
   }
   .discount-2__heading {
     font-size: 50px;
   }
 }
 
-@media screen and (min-width: 700px) {
-  .discount-2 {
-    background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(19%, #000), color-stop(50%, transparent), color-stop(80%, #000)), url("../assets/discount-2.jpg");
-    background-image: linear-gradient(to right, #000, #000 19%, transparent 50%, #000 80%), url("../assets/discount-2.jpg");
-  }
-}
-
 @media screen and (min-width: 1400px) {
   .discount-2 {
     background-size: contain;
-    background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(23%, #000), color-stop(50%, transparent), color-stop(70%, #000)), url("../assets/discount-2.jpg");
-    background-image: linear-gradient(to right, #000, #000 23%, transparent 50%, #000 70%), url("../assets/discount-2.jpg");
   }
 }
 

@@ -4,7 +4,7 @@
     color:$white;
     text-align: center;
 
-    background-image: url('../assets/discount-2.jpg');
+    // background-image: url('../assets/discount-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -53,31 +53,31 @@
     }
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:900px){
     .discount-2{
         background-size: contain;
-        background-image: 
-            linear-gradient(to right, #000, #000 13%, transparent 50%, #000 90%),
-            url('../assets/discount-2.jpg');
+        // background-image: 
+        //     linear-gradient(to right, #000, #000 13%, transparent 50%, #000 90%),
+        //     url('../assets/discount-2.jpg');
 
         &__heading{
             font-size: 50px;
         }
     }
 }
-@media screen and (min-width:700px){
-    .discount-2{
-        background-image: 
-            linear-gradient(to right, #000, #000 19%, transparent 50%, #000 80%),
-            url('../assets/discount-2.jpg');
-    }
-}
+// @media screen and (min-width:00px){
+//     .discount-2{
+//         background-image: 
+//             linear-gradient(to right, #000, #000 19%, transparent 50%, #000 80%),
+//             url('../assets/discount-2.jpg');
+//     }
+// }
 @media screen and (min-width:1400px){
     .discount-2{
         background-size: contain;
     
-        background-image: 
-            linear-gradient(to right, #000, #000 23%, transparent 50%, #000 70%),
-            url('../assets/discount-2.jpg');
+        // background-image: 
+        //     linear-gradient(to right, #000, #000 23%, transparent 50%, #000 70%),
+        //     url('../assets/discount-2.jpg');
     }
 }
