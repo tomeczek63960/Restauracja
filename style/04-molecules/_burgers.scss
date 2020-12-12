@@ -1,9 +1,6 @@
 .burgers{
     min-height: 100vh;
     position: relative;
-
-    // background-image: 
-    //     url('../assets/burgers.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -60,9 +57,6 @@
 
 @media screen and (min-width:900px){
     .burgers{
-        // background-image: 
-        //     linear-gradient(to right, #000, #000 6%, transparent 60%, #000, #000 95%),
-        //     url('../assets/burgers.jpg');
         background-size: contain;
     }
 

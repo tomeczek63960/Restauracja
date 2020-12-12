@@ -1,6 +1,4 @@
 .delivery{
-    
-    // background-image: url('../assets/delivery.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -39,7 +37,6 @@
     }
 }
 
-
 @media screen and (min-width:700px){
     .delivery{
         background-size: contain;
@@ -51,6 +48,5 @@
             font-size: 55px;
             letter-spacing: 1px;
         }
-        
     }
 }

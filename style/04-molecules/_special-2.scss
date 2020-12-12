@@ -1,55 +1,38 @@
 .special-2{
-    // background-image: 
-    //         linear-gradient(to right, #000 5%, transparent 30%, #000 95%),
-    //         url('../assets/special-2.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        
-        min-height:90vh;
-        position: relative;
-
-        &::before,
-        &::after{
-            content:"";
-            position: absolute;
-            display: block;
-            width: 100%;
-            background-color: rgba(0,0,0,.7);
-        }
-        &::before{
-            top:0;
-            height: 22vh;
-        }
-        &::after{
-            bottom:0;
-            height: 25vh;
-        }
-
-        &__content-1__text{
-            @include absolute(10vh,auto,auto,50%,translateX(-50%));
-            color:$white;
-            font-size:25px;
-            text-align: center;
-            font-family: Poppins;
-        }
-
-        &__content__space{
-            @include spaceBorder(43vh, 22vh);
-        }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height:90vh;
+    position: relative;
+    &::before,
+    &::after{
+        content:"";
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgba(0,0,0,.7);
     }
-    
+    &::before{
+        top:0;
+        height: 22vh;
+    }
+    &::after{
+        bottom:0;
+        height: 25vh;
+    }
+    &__content-1__text{
+        @include absolute(10vh,auto,auto,50%,translateX(-50%));
+        color:$white;
+        font-size:25px;
+        text-align: center;
+        font-family: Poppins;
+    }
+    &__content__space{
+        @include spaceBorder(43vh, 22vh);
+    }
+}
 @media screen and (min-width:900px){
     .special-2{
         background-size: contain;
     }
 }
-
-
-// @media screen and (min-width:1400px){
-//     .special-2{
-//         // background-image: 
-//         //     linear-gradient(to right, #000 15%, transparent 30%, #000 80%),
-//         //     url('../assets/special-2.jpg');
-//     }
-// }

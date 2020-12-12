@@ -4,14 +4,9 @@
     min-height:90vh;
     color:$white;
     text-align: center;
-
-    // background-image: 
-        // linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%),
-        // url('../assets/discount.jpg');
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
-
 
     &__heading{
         font-size: 40px;
@@ -26,12 +21,7 @@
 
 
 @media screen and (min-width:700px){
-    .discount{
-        // background-image: 
-        //     linear-gradient(to bottom, #000, #000 5%, transparent 60%, #000 98%),
-        //     linear-gradient(to right, #000, #000 15%, transparent 40%, #000 85%),
-        //     url('../assets/discount.jpg');
-        
+    .discount{        
         &__heading{
             font-size: 55px;
         }

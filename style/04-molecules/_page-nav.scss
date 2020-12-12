@@ -4,7 +4,6 @@
         @include maxWidth(1000px);
         padding:5px 20px;
         position: relative;
-
         &::before,
         &::after{
             content:"";
@@ -14,7 +13,6 @@
             height:2px;
             background-color: $primaryColor;
         }
-
         &::before{
             top:0;
             left:0;
@@ -23,7 +21,6 @@
             bottom:0;
             right:0;
         }
-
         &__link{
             color:$primaryColor;
             font-size:18px;
@@ -32,7 +29,6 @@
         }
     }
 }
-
 @media screen and (min-width:500px){
     .page-nav{
         &__navbar{
@@ -45,7 +41,6 @@
         }
     }
 }
-
 @media screen and (min-width:700px){
     .page-nav{
         padding:0 50px;

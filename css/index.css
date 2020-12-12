@@ -447,7 +447,7 @@ textarea {
   padding-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.8);
   height: 50vh;
-  background-image: url("../assets/top-left.png"), url("../assets/top-right.png");
+  background-image: url("../assets/top-left.webp"), url("../assets/top-right.webp");
   background-size: 120px;
   background-position: top left, top right;
   background-repeat: no-repeat;
@@ -1114,7 +1114,7 @@ textarea {
   padding: 40px 20px 100px;
   text-align: center;
   color: white;
-  background-image: url("../assets/bottom-left.png"), url("../assets/bottom-right.png");
+  background-image: url("../assets/bottom-left.webp"), url("../assets/bottom-right.webp");
   background-size: 120px;
   background-position: bottom left, bottom right;
   background-repeat: no-repeat;

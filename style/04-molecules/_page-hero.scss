@@ -1,8 +1,5 @@
 .page-hero{
     min-height:100vh;
-    // background-image:
-    //     linear-gradient(to right, #000 5%, transparent 30%, #000 95%),
-    //     url('../assets/hero-bg.jpg');
     background-size: auto, cover;
     background-repeat: no-repeat;
     background-position: bottom 30% center;
@@ -13,8 +10,8 @@
         background-color:$primaryBg;
         height:50vh;
         background-image: 
-            url('../assets/top-left.png'),
-            url('../assets/top-right.png');
+            url('../assets/top-left.webp'),
+            url('../assets/top-right.webp');
         background-size: 120px;
         background-position: top left, top right;
         background-repeat: no-repeat;
@@ -55,7 +52,6 @@
             right:0;
         }
     }
-
     &__content-2{
         padding:30px 20px;
         height:20vh;
@@ -63,13 +59,11 @@
         color:$white;
         text-align:center;
         font-size:13px;
-
         p{
             @include maxWidth(500px);
         }
     }
 }
-
 @media screen and (min-width:1400px){
     .page-hero__content{
         background-position: top left 100px, top right 100px;

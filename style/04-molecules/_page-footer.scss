@@ -4,8 +4,8 @@
     color:$white;
 
     background-image: 
-        url('../assets/bottom-left.png'),
-        url('../assets/bottom-right.png');
+        url('../assets/bottom-left.webp'),
+        url('../assets/bottom-right.webp');
     background-size: 120px;
     background-position: bottom left, bottom right ;
     background-repeat: no-repeat;
@@ -48,7 +48,6 @@
         }
     }
 }
-
 
 @media screen and (min-width:1400px){
     .page-footer{

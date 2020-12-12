@@ -4,17 +4,12 @@
     color:$white;
     font-family: Poppins;
     text-align: center;
-    // background-image:
-    //     linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%),
-    //     url('../assets/special.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
     &__heading{
         font-size:60px;
         font-weight: normal;
-
         strong{
             font-weight: 600;
             text-transform: uppercase;
@@ -31,7 +26,6 @@
         font-weight: 400;
     }
 }
-
 @media screen and (min-width:500px){
     .special{
         padding-top: 150px;
@@ -42,15 +36,9 @@
         }
     }
 }
-
 @media screen and (min-width:900px){
     .special{
-        // background-image: 
-        //     linear-gradient(to right, #000 20%, transparent 30%, #000 105%),
-        //     linear-gradient(to bottom,#000 15%, transparent 30%, #000 110%),
-        //     url('../assets/special.jpg');;
         background-size: contain;
-
         &__heading{
             font-size: 80px;
         }
